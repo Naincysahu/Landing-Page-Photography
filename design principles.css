@@ -1,0 +1,240 @@
+*
+{
+  padding:0;
+  margin: 0;  
+  font-family: 'Merriweather', serif;
+  overflow: hidden;
+}  
+.main_box
+{
+    background-image:url(Camera\ iamge.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.btn_one i
+{
+    font-size: 30px;
+    font-weight: 600px;
+    position: absolute;
+    left: 25px;
+    /* top: 25px; */
+    line-height:70px ;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    color: white;
+}
+.sidebar_menu
+{
+    position: fixed;
+    left: -300px;
+    background-color: rgba(195, 211, 211,0.1);
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0 0 6px rgb(170, 165, 165);
+}
+.sidebar_menu .logo
+{
+    width: 300px;
+    position: absolute;
+    line-height: 70px;
+    box-shadow:  0 2px 4px rgb(121, 113, 113);
+    height: 70px;
+    font-weight:bolder;
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    font-size: 25px;
+    text-decoration: none;
+    left: 60px;
+    color:chocolate;
+    font-family: papyrus;
+}    
+.menu
+{
+    position: absolute;
+    color: azure;
+    top: 90px;
+    /* left: 25px;*/
+    width: 100%;
+}
+.menu li{
+    padding: 10px 20px;
+    margin-top: 6px;
+}
+.menu i,a{
+   color: white;
+   text-decoration: none;
+}
+.menu ul a
+{
+    padding-left: 8px;
+}
+.sidebar_menu .social_media
+{
+    position: absolute;
+    left: 35%;
+    bottom: 30px;
+}
+.sidebar_menu .social_media i
+{
+    color: white;
+    opacity: 0.5;
+    padding: 0.5px;
+}
+.btn_two
+{
+    font-size: 30px;
+    font-weight: 600px;
+    position: absolute;
+    left: 270px;
+    line-height:70px ;
+    cursor: pointer;
+}
+.btn_two i
+{
+    opacity: 0;
+}  
+#check
+{
+    /* position: absolute;
+    top: -20px; */
+    display: none;
+}  
+.menu li:hover
+{
+    box-shadow: 0 0 4px rgb(121, 113, 113);      
+}
+.btn_one i:hover{
+    font-size:40px;
+}
+.btn_two i:hover
+{
+    font-size: 40px;
+    transition: all 0.5s linear;
+}
+.social_media i:hover{
+    font-size:20px;
+    opacity: 1;
+}
+#check:checked ~ .sidebar_menu
+{
+    left: 0;
+    transition: all .5s linear;
+}
+#check:checked ~ .btn_one i
+{
+    display: none;     /*opacity: 0;  */
+}
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
+.Cameras
+{
+    height: 200px;
+    width: 600px;
+    display: flex;
+    padding: 10px;
+    margin-top: 500px;
+    margin-left: 400px;
+}
+.Camera_1
+{
+    background-image:url("Camera\ 1.jpg") ;
+    border-radius: 50%;
+    height: 150px;
+    width: 170px;
+    box-shadow: 2px 2px 4px rgba(255,255,255,0.7);
+    background-size: cover;
+    margin: 15px;
+}
+.Camera_1:hover{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transition-property:all;
+    transition-timing-function: ease-in;
+}
+.Camera_2
+{
+    background-image:url("Camera\ 2.jpg") ;
+    border-radius: 50%;
+    height: 150px;
+    width: 170px;
+    box-shadow: 2px 2px 4px rgba(255,255,255,0.7);
+    background-size: cover;
+    margin: 15px;
+}
+.Camera_2:hover
+{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transition-property:all;
+    transition-timing-function: ease-in;
+}
+.Camera_3
+{
+    background-image:url("Camera\ 3.jpg") ;
+    border-radius: 50%;
+    height: 150px;
+    width: 170px;
+    box-shadow: 1px 1px 4px rgba(255,255,255,0.7);
+    background-size: cover;
+    margin: 15px;
+}
+.Camera_3:hover
+{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transition-property:all;
+    transition-timing-function: ease-in;
+}
+h1{
+    position: absolute;
+    background-image: url("Background\ image1.jfif");
+    background-size: contain;
+    background-clip: text;
+    color:transparent;
+    -webkit-background-clip: text;
+    left: 400px;
+    top: 100px;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    position: absolute;
+    color:bisque;
+    left: 410px;
+    top: 220px;
+    font-size: 30px;
+    font-family: cursive;
+}
+p
+{
+    position: absolute;
+    color:bisque;
+    left: 390px;
+    top: 250px;
+    font-family: cursive;
+    padding: 20px;
+}
+.welcome
+{
+    padding: 20px;
+    top:350px ;
+}
+button
+{
+  position: absolute;
+  left: 400px;
+  top: 450px;
+  color: brown;
+  background-color: black; 
+  height: fit-content;
+  font-size: 20px;
+  width: 100px; 
+  border: 4px solid black;
+  box-shadow: 2px 2px 7px rgb(75, 55, 55);
+  border-radius: 15px;
+}
+button:hover{
+    transform: scaley(1.2);
+}
